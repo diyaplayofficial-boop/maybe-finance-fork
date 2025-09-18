@@ -1,0 +1,3 @@
+web: bundle exec puma -C config/puma.rb -e production
+worker: bundle exec sidekiq
+release: bundle exec rails db:create && bundle exec rails db:migrate && bundle exec rails db:seed || true

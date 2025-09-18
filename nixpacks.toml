@@ -1,0 +1,14 @@
+[phases.setup]
+nixPkgs = ["...", "postgresql", "libyaml"]
+
+[phases.build]
+cmds = [
+    "gem install bundler:2.6.9",
+    "bundle install --deployment --without development test",
+    "bundle exec bootsnap precompile --gemfile",
+    "bundle exec bootsnap precompile app/ lib/",
+    "SECRET_KEY_BASE=dummy RAILS_ENV=production bundle exec rails assets:precompile"
+]
+
+[start]
+cmd = "bundle exec rails server -p $PORT -b 0.0.0.0 -e production"

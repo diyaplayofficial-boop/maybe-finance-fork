@@ -1,0 +1,20 @@
+#!/bin/bash
+set -e
+
+echo "Starting LedgerLeaf application on Railway..."
+
+# Wait for database to be ready
+echo "Checking database connectivity..."
+until bundle exec rails runner "ActiveRecord::Base.connection.tables"; do
+  echo "Database not ready, waiting..."
+  sleep 2
+done
+
+echo "Database connected successfully!"
+
+# Run database migrations if needed
+echo "Running database setup..."
+bundle exec rake db:prepare || true
+
+echo "Starting Rails server..."
+exec bundle exec rails server -p $PORT -b 0.0.0.0 -e production
