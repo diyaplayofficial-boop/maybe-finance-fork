@@ -1,0 +1,13 @@
+---
+zh-TW:
+  layouts:
+    auth:
+      existing_account: 已有帳戶？
+      no_account: 初次使用？
+      sign_in: 登入
+      sign_up: 註冊帳戶
+      your_account: 您的帳戶
+    shared:
+      footer:
+        privacy_policy: 隱私政策
+        terms_of_service: 服務條款

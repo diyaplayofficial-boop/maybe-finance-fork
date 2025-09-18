@@ -1,0 +1,18 @@
+---
+ja:
+  locale:
+    changed: "言語が日本語に変更されました"
+    invalid: "無効な言語です"
+  languages:
+    en: "English"
+    zh-TW: "繁體中文"
+    pt: "Português"
+    es: "Español"
+    ko: "한국어"
+    ja: "日本語"
+  navigation:
+    language_selector: "言語を選択"
+    dashboard: "ダッシュボード"
+    accounts: "アカウント"
+    transactions: "取引"
+    settings: "設定"

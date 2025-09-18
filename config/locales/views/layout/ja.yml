@@ -1,0 +1,13 @@
+---
+ja:
+  layouts:
+    auth:
+      existing_account: すでにアカウントをお持ちですか？
+      no_account: 初回ご利用ですか？
+      sign_in: ログイン
+      sign_up: アカウント作成
+      your_account: あなたのアカウント
+    shared:
+      footer:
+        privacy_policy: プライバシーポリシー
+        terms_of_service: 利用規約

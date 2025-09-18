@@ -1,0 +1,18 @@
+---
+ko:
+  locale:
+    changed: "언어가 한국어로 변경되었습니다"
+    invalid: "유효하지 않은 언어입니다"
+  languages:
+    en: "English"
+    zh-TW: "繁體中文"
+    pt: "Português"
+    es: "Español"
+    ko: "한국어"
+    ja: "日本語"
+  navigation:
+    language_selector: "언어 선택"
+    dashboard: "대시보드"
+    accounts: "계정"
+    transactions: "거래내역"
+    settings: "설정"

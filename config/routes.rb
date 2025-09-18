@@ -32,6 +32,9 @@ Rails.application.routes.draw do
 
   get "changelog", to: "pages#changelog"
   get "feedback", to: "pages#feedback"
+  
+  # Locale switching
+  patch "locale", to: "locales#update"
 
   resource :current_session, only: %i[update]
 

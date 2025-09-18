@@ -1,0 +1,29 @@
+<div class="<%= component_classes %>">
+  <%= render DS::Menu.new do |menu| %>
+    <% menu.with_trigger do %>
+      <%= render DS::Button.new(theme: :secondary, size: :sm) do %>
+        🌍 <%= t("languages.#{current_locale}") %>
+        <%= render DS::FilledIcon.new(name: "chevron_down", size: 16) %>
+      <% end %>
+    <% end %>
+
+    <% menu.with_content do %>
+      <div class="py-1">
+        <div class="px-3 py-2 text-xs font-medium text-gray-500 border-b border-gray-200">
+          <%= t('navigation.language_selector') %>
+        </div>
+        <% available_languages.each do |language| %>
+          <%= form_with url: locale_path, method: :patch, local: true, class: "inline" do |form| %>
+            <%= form.hidden_field :locale, value: language[:code] %>
+            <button type="submit" class="flex items-center w-full px-3 py-2 text-sm text-left hover:bg-gray-50 <%= 'bg-blue-50 text-blue-700' if language[:current] %>">
+              <span class="flex-1"><%= language[:name] %></span>
+              <% if language[:current] %>
+                <%= render DS::FilledIcon.new(name: "check", size: 16, classes: "text-blue-600") %>
+              <% end %>
+            </button>
+          <% end %>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

@@ -1,0 +1,18 @@
+---
+zh-TW:
+  locale:
+    changed: "語言已更改為繁體中文"
+    invalid: "無效的語言選項"
+  languages:
+    en: "English"
+    zh-TW: "繁體中文"
+    pt: "Português"
+    es: "Español"
+    ko: "한국어"
+    ja: "日本語"
+  navigation:
+    language_selector: "選擇語言"
+    dashboard: "儀表板"
+    accounts: "帳戶"
+    transactions: "交易"
+    settings: "設定"

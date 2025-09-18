@@ -1,0 +1,18 @@
+---
+es:
+  locale:
+    changed: "Idioma cambiado a Español"
+    invalid: "Idioma inválido"
+  languages:
+    en: "English"
+    zh-TW: "繁體中文"
+    pt: "Português"
+    es: "Español"
+    ko: "한국어"
+    ja: "日本語"
+  navigation:
+    language_selector: "Seleccionar idioma"
+    dashboard: "Panel"
+    accounts: "Cuentas"
+    transactions: "Transacciones"
+    settings: "Configuración"

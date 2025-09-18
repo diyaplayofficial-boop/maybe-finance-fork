@@ -1,0 +1,13 @@
+---
+ko:
+  layouts:
+    auth:
+      existing_account: 이미 계정이 있으신가요?
+      no_account: 처음 사용하시나요?
+      sign_in: 로그인
+      sign_up: 계정 만들기
+      your_account: 내 계정
+    shared:
+      footer:
+        privacy_policy: 개인정보 처리방침
+        terms_of_service: 서비스 약관
